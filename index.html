@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹幕</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://s9.qhres.com/lib/qwrap/113.js"></script>
+</head>
+<body>
+    <div id="danmu-container"></div>
+</body>
+<script src="js/qboot.js"></script>
+<script src="js/index.js"></script>
+<script>
+var config = {
+    data: [
+        {
+            text: '<img src="http://p6.qhimg.com/t015b30ba52c66874cf.png">'
+        },
+        {
+            text: '<img src="http://p3.qhimg.com/t01a2c1b4ba0197fb49.png">'
+        },
+        {
+            text: '准备啦准备啦'
+        },
+        {
+            text: '<img src="http://p5.qhimg.com/t019245a9f493df5422.png">'
+        },
+        {
+            text: '<img src="http://p2.qhimg.com/t01704943768540b1da.png">'
+        },
+        {
+            text: '<img src="http://p1.qhimg.com/t011096946568a0c91b.png">'
+        },
+        {
+            text: '<img src="http://p9.qhimg.com/t0101b6c4c616a1c971.png">'
+        },
+        {
+            text: '<img src="http://p7.qhimg.com/t01a0f6432b6b68bbc5.png">'
+        },
+        {
+            text: '<img src="http://p9.qhimg.com/t010b043a742ea849cc.png">'
+        },
+        {
+            text: 6666
+        },
+        {
+            text: '准备要放大招了'
+        }
+    ],
+    rowHeight: 60,                      // 弹幕每行的高度
+    rowNum: 4,                          // 弹幕显示行数
+    addMask: false,                      // 是否有透明背景色
+    destroyContainer: true,             // 关闭时是否移除整个container，默认empty子元素
+    addCloseBtn: true,                  // 是否显示关闭按钮
+    offTime: 10,                          // 定时关闭的时间,单位为秒
+    addCookie: false
+};
+// 弹幕实例化
+new DanmuSystem(W('#danmu-container'), config);
+</script>
+</html>
